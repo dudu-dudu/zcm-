@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="data3" data-number ="45">
+			<canvas  width="200" height="200"></canvas>
+		</div>
+		
+		<script src="Circle.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			
+			
+			var c1 = new Circle( document.querySelector(".data3"),{lineWidth:6,frontColor:"skyblue",fontSize:100} )
+			
+//			
+//			var fontSize = 80;
+//			var can = document.querySelector(".data3 canvas");
+//			
+//			var data = document.querySelector(".data3").dataset["number"]; // 60
+//			var currentData = 0 ;//当前的数值
+//			
+//			var ctx = can.getContext("2d"); //画布
+//			var pointX = can.offsetWidth/2 ;
+//			var pointY = can.offsetHeight/2;   //圆心
+//			var r      = can.offsetWidth/2 - 10 ; 
+//			
+//			var start  = -Math.PI/2; 				   //起始的弧度
+//			var end    = start + data/100 * 2*Math.PI; //结束的弧度
+//
+//			
+////字
+//			var fontContent = data+"%"
+//			ctx.font= fontSize + "px 黑体";
+//			ctx.fillText(fontContent,pointX-(fontContent.length*fontSize)/3,pointY+fontSize/3);
+//
+////动画
+//			var timer = setInterval(function(){
+//				ctx.clearRect(0,0,can.offsetWidth,can.offsetHeight);
+//				console.info( currentData);
+//			//最大不能超过data
+//				currentData < data && currentData++
+//				end = start + currentData/100 * 2 * Math.PI;
+//				ctx.lineWidth = "2";	
+//			//画背景的圆弧			
+//				ctx.strokeStyle="#333333";
+//				ctx.beginPath();
+//				ctx.arc(pointX,pointY,r,0,2*Math.PI);
+//				ctx.stroke();
+//				
+//			//画前景的圆弧
+//				ctx.strokeStyle="red";
+//				ctx.beginPath();
+//				ctx.arc(pointX,pointY,r,start,end);
+//				ctx.stroke();
+//			//写字
+//				ctx.textAlign="center";    //水平居中
+//				ctx.textBaseline="middle"; //垂直居中
+//				
+//				var fontContent = currentData+"%"
+//				ctx.font= fontSize + "px 黑体";
+//				ctx.fillText(fontContent,pointX ,pointY );
+//			//清除定时器	
+//				currentData == data && clearInterval(timer);
+//				
+//			},50);
+		</script>
+	</body>
+</html>
